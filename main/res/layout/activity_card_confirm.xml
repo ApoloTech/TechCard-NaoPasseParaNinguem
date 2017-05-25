@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="presentationlayer.techcard.CardConfirmActivity"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCardConfirm"
+            android:textColor="@color/Black"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deseja Cadastrar um TechCard agora?"
+            android:textAlignment="center"
+            android:layout_marginTop="110dp" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorButtons"
+            android:text="Sim"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:onClick="GoRegisterTechCard"/>
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/Black"
+            android:text="Não"
+            android:textSize="18dp"
+            android:textColor="@color/colorButtons"
+            android:clickable="true"
+            android:onClick="GoToMap"/>
+
+        <TextView
+            android:id="@+id/txtWhatIsTechCard"
+            android:textColor="@color/Black"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O que é um TechCard?"
+            android:textAlignment="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:onClick="WhatTheFuckIsThis"/>
+    </LinearLayout>
+
+</LinearLayout>

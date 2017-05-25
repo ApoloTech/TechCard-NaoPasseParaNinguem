@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="presentationlayer.techcard.MapEditActivity">
+
+    <item
+        android:id="@+id/Menu_Settings"
+        android:orderInCategory="100"
+        android:title="Configurações"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Menu_Exit"
+        android:orderInCategory="100"
+        android:title="Sair"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Menu_WhatEver"
+        android:orderInCategory="100"
+        android:title="WhatEver"
+        app:showAsAction="never"/>
+
+</menu>

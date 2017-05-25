@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="presentationlayer.techcard.MapEditActivity"
+    android:background="@color/common_google_signin_btn_text_dark_default">
+
+    <fragment
+        android:layout_marginTop="1dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        tools:context="presentationlayer.techcard.MapEditActivity"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_google_signin_btn_text_dark_default">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnZoomIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/Black"
+                android:drawableLeft="@mipmap/ic_zoomin"
+                android:text="Zoom +"
+                android:textColor="@color/colorButtons"
+                android:textSize="18dp"
+                android:onClick="ZoomIn"
+                />
+
+            <Button
+                android:id="@+id/btnZoonOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorButtons"
+                android:drawableLeft="@mipmap/ic_zoomout"
+                android:text="Zoom -"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                android:onClick="ZoomOut"/>
+
+            <Button
+                android:id="@+id/btnTripTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/Black"
+                android:drawableLeft="@mipmap/ic_tripto"
+                android:text="Viajar Para"
+                android:textColor="@color/colorButtons"
+                android:textSize="18dp"
+                android:onClick="SearchAddress"/>
+
+            <Button
+                android:id="@+id/btnMyCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorButtons"
+                android:drawableLeft="@mipmap/ic_mycards"
+                android:text="Meus TechCards"
+                android:textColor="@color/Black"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/btnNewTechCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/Black"
+                android:drawableLeft="@mipmap/ic_new"
+                android:text="Adicionar novo TechCard"
+                android:textColor="@color/colorButtons"
+                android:textSize="18dp"
+                android:onClick="newMarker"/>
+
+            <Button
+                android:id="@+id/btnOpenBM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorButtons"
+                android:drawableLeft="@mipmap/ic_fullmap"
+                android:text="Expandir Mapa"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                android:onClick="OpenMap"/>
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/Black"
+                android:drawableLeft="@mipmap/ic_new"
+                android:text="Sair"
+                android:textColor="@color/colorButtons"
+                android:textSize="18dp"
+                android:onClick="newMarker"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

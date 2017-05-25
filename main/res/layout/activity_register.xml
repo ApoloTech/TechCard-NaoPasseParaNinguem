@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="presentationlayer.techcard.RegisterActivity"
+    android:background="@color/common_google_signin_btn_text_dark_default">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_setcpf"
+        android:hint="Nome"
+        android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Sobrenome"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/txtBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Data de Nascimento ex: 24/11/1997"
+            android:inputType="date"/>
+
+        <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_setcpf"
+        android:hint="DDD + Número do Aparelho"
+        android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"/>
+
+
+        <EditText
+            android:id="@+id/txtDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="CPF/CNPJ"
+            android:inputType="number"/>
+
+
+    <EditText
+        android:id="@+id/txtPasswordReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_setcpf"
+        android:hint="Senha"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/txtPasswordReg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_setcpf"
+        android:hint="Confirme sua Senha"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButtons"
+        android:text="Registrar"
+        android:textSize="18dp"
+        android:clickable="true"
+        android:onClick="RegisterUser"/>
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="presentationlayer.techcard.CardRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtCard_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Título a ser exibido - Obrigatório" />
+
+        <EditText
+            android:id="@+id/txtCard_Description"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Descrição - Obrigatório" />
+
+        <EditText
+            android:id="@+id/txtCard_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Telefone - Preferencial" />
+
+        <EditText
+            android:id="@+id/txtCard_Phone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Telefone 2 - Preferencial" />
+
+        <EditText
+            android:id="@+id/txtCard_Key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@mipmap/ic_setcpf"
+            android:hint="Palavras-Chave - Obrigatório - Insira ao menos uma palavra ou mais" />
+
+        <Button
+            android:id="@+id/btnEditLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/Black"
+            android:text="Selecionar Este Local"
+            android:textSize="18dp"
+            android:textColor="@color/colorButtons"
+            android:drawableLeft="@mipmap/ic_editlocal" />
+
+        <Button
+            android:id="@+id/btnRegisterCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorButtons"
+            android:text="Registrar TechCard"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:onClick="RegisterCard"/>
+
+
+    </LinearLayout>
+</ScrollView>
